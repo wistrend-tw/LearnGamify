@@ -1,0 +1,43 @@
+﻿[*.cs]
+
+# CS8602: 可能 null 參考的取值 (dereference)。
+dotnet_diagnostic.CS8602.severity = silent
+
+# IDE0090: 使用 'new(...)'
+dotnet_diagnostic.IDE0090.severity = silent
+
+# CS8600: 正在將 Null 常值或可能的 Null 值轉換為不可為 Null 的型別。
+dotnet_diagnostic.CS8600.severity = none
+
+# CS8604: 可能有 Null 參考引數。
+dotnet_diagnostic.CS8604.severity = none
+
+# CA1305: 指定 IFormatProvider
+dotnet_diagnostic.CA1305.severity = silent
+
+# CS8603: 可能有 Null 參考傳回。
+dotnet_diagnostic.CS8603.severity = silent
+
+# IDE0059: 指派了不必要的值
+dotnet_diagnostic.IDE0059.severity = silent
+
+# CS8618: 退出建構函式時，不可為 Null 的欄位必須包含非 Null 值。請考慮宣告為可為 Null。
+dotnet_diagnostic.CS8618.severity = silent
+
+# IDE1006: 命名樣式
+dotnet_diagnostic.IDE1006.severity = silent
+
+# CS0108: 成員隱藏所繼承的成員; 遺漏 new 關鍵字
+dotnet_diagnostic.CS0108.severity = silent
+
+# CS8629: 可為 Null 的實值型別可為 Null。
+dotnet_diagnostic.CS8629.severity = none
+
+# CS8619: 值中參考型別的可 Null 性與目標型別不符合。
+dotnet_diagnostic.CS8619.severity = none
+
+# CS8714: 型別無法作為型別參數用於泛型型別或方法中。型別引數的可 Null 性與 'notnull' 限制式不符合。
+dotnet_diagnostic.CS8714.severity = none
+
+# Default severity for analyzer diagnostics with category 'Style'
+dotnet_analyzer_diagnostic.category-Style.severity = none
