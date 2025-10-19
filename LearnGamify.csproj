@@ -1,0 +1,147 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <BaseOutputPath>C:\兆迪\專案\J02 中投有線\Code_Publish\Dev</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;8601;</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;8601;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".config\**" />
+    <Compile Remove="Back\**" />
+    <Compile Remove="bin\**" />
+    <Compile Remove="fileJson\**" />
+    <Compile Remove="packages\**" />
+    <Compile Remove="Properties\**" />
+    <Compile Remove="Services\Enum\**" />
+    <Compile Remove="wwwroot\Upload\**" />
+    <Content Remove=".config\**" />
+    <Content Remove="Back\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="fileJson\**" />
+    <Content Remove="packages\**" />
+    <Content Remove="Properties\**" />
+    <Content Remove="Services\Enum\**" />
+    <Content Remove="wwwroot\Upload\**" />
+    <EmbeddedResource Remove=".config\**" />
+    <EmbeddedResource Remove="Back\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="fileJson\**" />
+    <EmbeddedResource Remove="packages\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <EmbeddedResource Remove="Services\Enum\**" />
+    <EmbeddedResource Remove="wwwroot\Upload\**" />
+    <None Remove=".config\**" />
+    <None Remove="Back\**" />
+    <None Remove="bin\**" />
+    <None Remove="fileJson\**" />
+    <None Remove="packages\**" />
+    <None Remove="Properties\**" />
+    <None Remove="Services\Enum\**" />
+    <None Remove="wwwroot\Upload\**" />
+    <_WebToolingArtifacts Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Cust2Controller.cs" />
+    <Compile Remove="Controllers\_Controller.cs" />
+    <Compile Remove="Models\Billboard.cs" />
+    <Compile Remove="Models\ContactMarkPerson.cs" />
+    <Compile Remove="Models\ContractGasSafetyCheck.cs" />
+    <Compile Remove="Models\ContractMarkCyInfo.cs" />
+    <Compile Remove="Models\ContractMarkProducts.cs" />
+    <Compile Remove="Models\Counties.cs" />
+    <Compile Remove="Models\Districts.cs" />
+    <Compile Remove="Models\FreightManagement.cs" />
+    <Compile Remove="Models\GasPriceManagement.cs" />
+    <Compile Remove="Models\Getcode.cs" />
+    <Compile Remove="Models\LineNotify.cs" />
+    <Compile Remove="Models\Login.cs" />
+    <Compile Remove="Models\MatrixContract.cs" />
+    <Compile Remove="Models\MatrixContractEquipmentOwnership.cs" />
+    <Compile Remove="Models\MatrixContractGasSpecifications.cs" />
+    <Compile Remove="Models\MySqlContext.cs" />
+    <Compile Remove="Models\NotifyLog.cs" />
+    <Compile Remove="Models\NotifySms.cs" />
+    <Compile Remove="Models\OnlineContract.cs" />
+    <Compile Remove="Models\OnlineContractEquipmentOwnership.cs" />
+    <Compile Remove="Models\OnlineContractGasSpecifications.cs" />
+    <Compile Remove="Models\Order.cs" />
+    <Compile Remove="Models\OrderDetail.cs" />
+    <Compile Remove="Models\Permission.cs" />
+    <Compile Remove="Models\Products.cs" />
+    <Compile Remove="Models\ProductsDescription.cs" />
+    <Compile Remove="Models\ProductsImage.cs" />
+    <Compile Remove="Models\ProductsImageIntroduce.cs" />
+    <Compile Remove="Models\ProductsSpecification.cs" />
+    <Compile Remove="Models\ProductsSpecifications.cs" />
+    <Compile Remove="Models\ProductsStore.cs" />
+    <Compile Remove="Models\ProductsUseInstructions.cs" />
+    <Compile Remove="Models\Sales.cs" />
+    <Compile Remove="Models\Service.cs" />
+    <Compile Remove="Models\StaffLog.cs" />
+    <Compile Remove="Models\Store.cs" />
+    <Compile Remove="Models\StoreBusinessTime.cs" />
+    <Compile Remove="Models\StoreService.cs" />
+    <Compile Remove="Models\StoreService_Base.cs" />
+    <Compile Remove="Models\Store_Base.cs" />
+    <Compile Remove="Models\TypeClass.cs" />
+    <Compile Remove="Models\User.cs" />
+    <Compile Remove="Models\UserWallet.cs" />
+    <Compile Remove="Models\UserWalletLog.cs" />
+    <Compile Remove="Models\WaGas_ProdContext.cs" />
+    <Compile Remove="Models\Wa_ContractAdd.cs" />
+    <Compile Remove="Models\Wa_ContractH.cs" />
+    <Compile Remove="Models\Wa_ContractTank.cs" />
+    <Compile Remove="Models\Wa_CUST.cs" />
+    <Compile Remove="Models\Wa_Order.cs" />
+    <Compile Remove="Models\Wa_OrderItem.cs" />
+    <Compile Remove="Models\Wa_Order_20241119.cs" />
+    <Compile Remove="Models\WebContext.cs" />
+    <Compile Remove="Program1.cs" />
+    <Compile Remove="Program2.cs" />
+    <Compile Remove="Services\Service_All.cs" />
+    <Compile Remove="Services\Service_ApiLog.cs" />
+    <Compile Remove="Services\Service_Login.cs" />
+    <Compile Remove="Services\Service_Permission.cs" />
+    <Compile Remove="_Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FirebaseAdmin" Version="3.1.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.69.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; Contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.1.2" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.6.15" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SkiaSharp" Version="2.88.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>
