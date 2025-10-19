@@ -13,6 +13,8 @@ public partial class LearnGamifyContext : DbContext
 
     public virtual DbSet<GameTask> GameTask { get; set; }
 
+    public virtual DbSet<Member> Member { get; set; }
+
     public virtual DbSet<TeachingLesson> TeachingLesson { get; set; }
 
     public virtual DbSet<TeachingUnit> TeachingUnit { get; set; }
@@ -24,6 +26,16 @@ public partial class LearnGamifyContext : DbContext
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
             entity.Property(e => e.Id).HasColumnType("int(11)");
+        });
+
+        modelBuilder.Entity<Member>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity.Property(e => e.Id).HasColumnType("int(11)");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasDefaultValueSql("'NULL'");
         });
 
         modelBuilder.Entity<TeachingLesson>(entity =>
